@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character set encoding -->
     <meta charset="UTF-8">
+    <!-- Responsive view settings -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 </head>
 <body>
     <h2>Login</h2>
+    <!-- Login form: jab submit hoga to /login endpoint par POST request bhejega -->
     <form action="/login" method="POST">
         <div>
+            <!-- Email input field -->
             <label>Email:</label><br>
             <input type="email" name="email" required placeholder="Enter email">
         </div>
         <br>
         <div>
+            <!-- Password input field -->
             <label>Password:</label><br>
             <input type="password" name="password" required placeholder="Enter password">
         </div>
         <br>
+        <!-- Form submit karne ka button -->
         <button type="submit">Login</button>
     </form>
+    
+    <!-- Agar account nahi hai to register page ka link -->
     <p>Don't have an account? <a href="/register">Register here</a></p>
 </body>
 </html>
