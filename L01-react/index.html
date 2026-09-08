@@ -3,30 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lecture 01 - Intro to React</title>
 </head>
 <body>
+    <!-- Standard HTML elements in the document -->
     <h1 id="heading">Hello, World!</h1>
     <p>This is a simple HTML page.</p>
 
+    <!-- 
+      ROOT CONTAINER:
+      This <div> is the mounting point for React.
+      React will take control of everything inside this container and render components here.
+    -->
     <div id="root"></div>
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, eius. Sint dolores dignissimos incidunt consequatur. Magni unde ipsam praesentium? Itaque unde est, nihil nesciunt quia autem nulla accusamus magni. Perspiciatis officiis architecto, provident quos eveniet beatae qui nisi numquam dolorem. Aliquam temporibus velit natus magni et blanditiis consectetur explicabo cupiditate rem non nemo dolore repellat, quae debitis? Omnis exercitationem rerum asperiores accusantium in ipsa vero eos nostrum numquam optio illum, facilis ex at ratione voluptate voluptas perferendis iure natus hic beatae consequuntur velit cum laborum debitis! Accusamus ad incidunt modi, minima est magnam sed optio rerum illo labore, et molestias.</p>
 
-    <!-- <script type="module">
-        // import 
-    </script> -->
+    <!-- 
+      STEP 1: Load React Core (CDN)
+      Provides core React APIs like React.createElement, component lifecycle, hooks, etc.
+    -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
 
-    <!-- <script> -->
-         <!-- let heading=document.getElementById("heading");
-         heading.innerHTML="hi this DOM web API";  -->
+    <!-- 
+      STEP 2: Load ReactDOM (CDN)
+      Provides DOM-specific methods to connect React with the browser DOM (e.g. createRoot, render).
+      Must be loaded AFTER react.development.js.
+    -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
-
-
-
-        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-   <script src="script.js"></script>
-    <!-- </script> -->
+    <!-- 
+      STEP 3: Load our custom script
+      Must be loaded AFTER React and ReactDOM so that window.React and window.ReactDOM are available.
+    -->
+    <script src="script.js"></script>
 </body>
 </html>
