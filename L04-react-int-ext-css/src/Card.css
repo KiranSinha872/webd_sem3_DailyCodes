@@ -1,0 +1,4 @@
+/* External CSS: scoped to .Card class, sets <h1> to pink */
+.Card h1 {
+  color: pink;
+}

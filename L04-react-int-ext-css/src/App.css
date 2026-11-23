@@ -1,0 +1,4 @@
+/* External CSS: styles all <h1> tags brown by default */
+h1 {
+  color: brown;
+}

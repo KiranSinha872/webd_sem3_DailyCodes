@@ -1,0 +1,4 @@
+/* External CSS: scoped to .Block class, sets <h1> to blue */
+.Block h1 {
+  color: blue;
+}
